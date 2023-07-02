@@ -21,7 +21,7 @@
       "@domain": ["root/domain"],
       "@entities/*": ["entities/*"],
       "@infrastructure": ["root/infrastructure"],
-      "@shared-frontend": ["shared-component-lib"]
+      "@shared-frontend": ["root/infrastructure/shared-components"]
     }
   },
   "include": ["src"],

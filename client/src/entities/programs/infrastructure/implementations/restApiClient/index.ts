@@ -13,23 +13,25 @@ export const restApiClient = () => {
   const { getSiteId, getApplicationId } = useLaunchConfigSelectors();
   const { CCSCApiClient, ...rest } = useCCSCApiSlice("program");
 
-  /* 
-    REFERENCE TO DOCS
-      - url: https://redux-toolkit.js.org/rtk-query/usage/code-splitting
-      - target: Injecting & exporting additional endpoints
+  /**
+  @Description Central API Slice definition to perform program entity requests
 
-      - url: https://redux-toolkit.js.org/rtk-query/usage/automated-refetching#providing-cache-data
-      - target: Providing cache data
+  @Documentation
+    - Target: Injecting & exporting additional endpoints
+    - Reference: https://redux-toolkit.js.org/rtk-query/usage/code-splitting
 
-      - url: https://redux-toolkit.js.org/rtk-query/usage/automated-refetching#invalidating-cache-data
-      - target: Invalidating cache data
+    - Target: Providing cache data
+    - Reference: https://redux-toolkit.js.org/rtk-query/usage/automated-refetching#providing-cache-data
 
-      - url: https://redux-toolkit.js.org/rtk-query/usage/queries
-      - target: Queries
+    - Target: Invalidating cache data
+    - Reference: https://redux-toolkit.js.org/rtk-query/usage/automated-refetching#invalidating-cache-data
 
-      - url: https://redux-toolkit.js.org/rtk-query/usage/mutations
-      - target: Mutations
-  */
+    - Target: Queries
+    - Reference: https://redux-toolkit.js.org/rtk-query/usage/queries
+
+    - Target: Mutations
+    - Reference: https://redux-toolkit.js.org/rtk-query/usage/mutations
+ */
   const programsApiClient = CCSCApiClient.injectEndpoints({
     endpoints: (build) => ({
       list: build.query<

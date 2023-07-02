@@ -4,7 +4,7 @@ import { ApiPagination } from "@shared-frontend";
 export const useViewModel = () => {
   const { restApiClient } = PROGRAM_ENTITY;
 
-  const listQuery = ({ limit = 10, offset = 10 }: Partial<ApiPagination>) =>
+  const listQuery = ({ limit = 10, offset = 0 }: Partial<ApiPagination>) =>
     restApiClient().useListQuery({ limit, offset });
   const readQuery = (id: string | number) => restApiClient().useReadQuery(id);
   const [createProgram] = restApiClient().useCreateMutation();
