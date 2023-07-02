@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./public/logo.jpg" width="80%" />
+    <img src="logo.jpg" width="80%" />
     <h1> Tanstack Table - React Sample</h1>
 </div>
 
