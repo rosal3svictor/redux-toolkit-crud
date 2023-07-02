@@ -1,11 +1,10 @@
 <div align="center">
     <img src="logo.jpg" width="80%" />
-    <h1> Tanstack Table - React Sample</h1>
 </div>
 
 This repository was created with the intention of providing developers with a
 sample of how to make a standardized implementation for a react app using
-[TanStack Table](https://tanstack.com/table/v8)
+Redux Toolkit and RTK Query
 
 # Development Tooling
 
